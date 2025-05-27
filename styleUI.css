@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Ysabeau;
+    font-weight: normal;
+    color: var(--secondary-dark-blue);
+}
+:root{
+    --primary-blue: #3045BF;
+    --primary-orange: #F2490C;
+    --primary-yellow: #FAAF40;
+
+    --secondary-dark-blue: #00213D;
+    --secondary-green: #09A603;
+    --secondary-red: #EF3F23;
+    --secondary-white: #FFFAF1;
+}
+body{
+    background-color: var(--primary-yellow);
+}
+.container{
+    width: 500px;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.ready-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.ready-page :nth-child(1){
+    position: absolute;
+    width: 800px;
+    opacity: 0.2;
+    z-index: -1;
+
+}
+.ready-page :nth-child(4){
+    position: absolute;
+    margin-top: 28rem;
+    margin-left: 15rem;
+}
+.ready-button{
+    border-radius: 1000px;
+    padding: 0.2rem 4rem;
+    font-family: "Funkie Retro";
+    font-size: 2rem;
+    border-color: var(--secondary-white);
+    border-style: solid;
+    border-width: 5px;
+    color: var(--secondary-white);
+    background-color: rgba(0, 0, 0, 0%);
+    cursor: pointer;
+    z-index: 2;
+}
+.juice1{
+    position: absolute;
+    margin-right: 35rem;
+    margin-top: 40rem;
+    width: 500px;
+}
+.juice2{
+    position: absolute;
+    margin-right: 30rem;
+    margin-top: 45rem;
+    width: 250px;
+}
