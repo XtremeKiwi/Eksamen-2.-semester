@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="StyleProductPage.css">
+    <script src="app.js" defer></script>
+    <!-- Leafletjs (Interactive map) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <title>Æble Juice</title>
+</head>
+<body>
+<!-- Juncle header -->
+<header class="header">
+    <img class="header-arch" src="img/Subtract.png">
+    <a href="index.html"><img class="juncle-logo-light" alt="Jucle logo"src="img/Logo%20Light.png"></a>
+    <img class="bladet" alt="Juncles blad logo" src="img/Logo%20icon.png">
+</header>
+
+<!-- Product -->
+<div class="sortiment-card-flex">
+    <div class="sortiment-card">
+        <button>Aeble Juice</button>
+        <img src="img/JuiceboxApple.png" alt="Produkt billede">
+    </div>
+</div>
+<article class="paragraph-wrap">
+    <p>Oplev den naturlige sødme fra 100% økologiske æbler, presset til frisk juice uden tilsætning. Vores æblejuice er ufiltreret og nænsomt pasteuriseret for at bevare smag og vitaminer</p>
+</article>
+
+<!-- Næringsindhold -->
+<section class="automater-container">
+    <img  class="automater-img" src="img/Placeholder%20Vendingmachine.webp" alt="billede af en juncle automat">
+    <article class="Næringsindhold-text">
+        <p>Næringsindhold pr. 100ml</p>
+        <p>45 kcal</p>
+        <p>Fedt: 0,1 g</p>
+        <p>Heraf mættede fedtsyrer: 0 g</p>
+        <p>Kulhydrat: 10,5 g</p>
+        <p>Heraf sukkerarter: 10 g</p>
+    </article>
+
+<!-- Fluff text -->
+    <article class="paragraph-wrap">
+        <p>Vi siger JA til mindre plastik! Vores emballage er designet med omtanke for miljøet, så du kan nyde din juice med god samvittighed. Hele produktionen foregår med fokus på bæredygtighed og respekt for naturen.</p>
+    </article>
+<!-- map -->
+    <section class="automater-container">
+        <h1>FIND VORES AUTOMATER</h1>
+
+    </section>
+    <!-- LeafletJS API -->
+    <div id="map"></div>
+    <!-- LeafletJS API -->
+
+
+    <article class="automater-fluff">
+            <p>Juncle Automater er rundt om hele Danmark! Se hvilken en er tættest på!</p>
+        </article>
+
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h1>KONTAKT OS</h1>
+    <img src="img/Apple%20Icon.png">
+    <div class="foot-wrapper">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Priorparken 681, 2606 Brøndby</p>
+    </div>
+    <div class="foot-wrapper">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Info@naturaljuice.dk</p>
+    </div>
+    <div class="foot-wrapper">
+        <i class="fa-solid fa-phone"></i>
+        <p>+45 70 70 15 80</p>
+    </div>
+    <div class="foot-wrapper">
+        <i class="fa-brands fa-instagram"></i>
+        <p>Juncledk</p>
+    </div>
+    <p>Copyright 2024 Natural juice</p>
+
+</section>
+</body>
+</html>
