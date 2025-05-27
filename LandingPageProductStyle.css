@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Ysabeau;
+    font-weight: normal;
+    color: var(--secondary-dark-blue);
+}
+.body{
+    overflow-x: hidden;
+}
+:root{
+    --primary-blue: #3045BF;
+    --primary-orange: #F2490C;
+    --primary-yellow: #FAAF40;
+
+    --secondary-dark-blue: #00213D;
+    --secondary-green: #09A603;
+    --secondary-red: #EF3F23;
+    --secondary-white: #FFFAF1;
+}
+
+
+/* Introduction and header */
+.intro-container{
+    height: 1000px;
+    width: 100vw;
+    background-color: var(--primary-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.intro-container img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+}
+.welcome-button{
+    padding: 0.5rem 2rem;
+    border-radius: 1000px;
+    border-style: none;
+    font-size: 2rem;
+    font-family: "Funkie Retro";
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+.fa-chevron-down{
+    color: var(--secondary-white);
+    padding-top: 10%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.header-arch{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.juncle-logo-light{
+    width: 100px;
+    padding: 5rem;
+    overflow: hidden;
+}
+.bladet{
+    position: absolute;
+    width: 30%;
+    margin-right: 50%;
+    margin-top: 40%;
+    transform: scaleX(-1)
+
+
+} /* End of Intro and header */
+
+/* sortiment-section */
+.sortiment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sortiment h1{
+    font-family: "Funkie Retro";
+    color: var(--secondary-red);
+    font-size: 2rem;
+}
+.background-fluff{
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    margin-left: 10rem;
+    margin-bottom: 30rem;
+}
+
+.sortiment-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+}
+.sortiment-card-flex{
+}
+.sortiment-card img{
+    width: 500px;
+}
+.sortiment-card button{
+    padding: 0.5rem 5rem;
+    border-radius: 1000px;
+    border-style: solid;
+    border-width: 0.2rem;
+    font-family: "Funkie Retro";
+    font-size: 2rem;
+    color: var(--secondary-white);
+    border-color: var(--primary-orange);
+    background-color: var(--primary-orange);
+}
+
+.paragraph-wrap{
+    margin: 1rem 2rem;
+    text-align: center;
+} /* end of sortiment */
+
+/* Automater */
+.automater-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.automater-illustration{
+    margin: 6rem 0 1rem 0;
+    width: 50%;
+}
+.automater-container h1{
+    font-family: "Funkie Retro";
+    font-size: 2.5rem;
+    color: var(--primary-blue)
+}
+.automater-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 0 8rem 0 0;
+    margin: 2rem;
+    object-fit: cover;
+}
+.automater-fluff{
+    margin: 0 2rem;
+}
+.automater-fluff p{
+    font-weight: bold;
+    color: var(--primary-blue)
+}
+.Næringsindhold-text{
+    text-align: right;
+    margin-bottom: 4rem;
+}
+
+/* Leaflet API */
+#map {
+    height: 500px;
+    width: 300px;
+    border-radius: 2rem;
+    margin: 4rem auto;
+}   /* end of Leaflet /*
+    /* End of Automater */
+
+
+/* About section */
+.about-us{
+    text-align: center;
+}
+.about-us h1{
+    font-family: "Funkie Retro";
+    color: var(--primary-orange);
+    font-size: 2.5rem;
+}
+.about-us p{
+    margin:  0 2rem 2rem 2rem;
+}
+.about-us p:nth-child(2){
+    text-align: left;
+}
+.about-us p:nth-child(4){
+    text-align: right;
+}
+.about-us img{
+    width: 90vw;
+    border-radius: 0 0 0 8rem;
+    margin-bottom: 2rem;
+} /* end of about section */
+
+/* footer */
+.footer h1{
+    text-align: center;
+    font-family: "Funkie Retro";
+    font-size: 2.5rem;
+    color: var(--primary-yellow)
+}
+.footer p{
+    text-align: center;
+}
+.footer img{
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    transform: scaleX(-1);
+}
+.foot-wrapper{
+    display: flex;
+    margin:  0.8rem 2rem;
+    gap: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 640px) {
+    /* Intro and header */
+    .bladet{
+        margin-top: 20%;
+    }
+
+    /* Sortiment */
+    .sortiment h1{
+        font-size: 3rem;
+    }
+    .background-fluff{
+        width: 300px;
+        margin-left: 20rem;
+        margin-bottom: 20rem;
+    }
+    /* Sortiment-card, reuse and eventually turn into carousel */
+    .sortiment-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 500px;
+    }
+    .sortiment-card-flex{
+    }
+    .sortiment-card img{
+        width: 100%;
+    }
+    .sortiment-card button{
+        padding: 1rem 5rem;
+        border-radius: 1000px;
+        border-style: solid;
+        border-width: 0.2rem;
+        font-family: "Funkie Retro";
+        font-size: 3rem;
+        color: var(--secondary-white);
+        border-color: var(--primary-orange);
+        background-color: var(--primary-orange);
+    }   /* end of sortiment-card */
+
+    /* Automater */
+
+    .automater-illustration{
+        margin: 6rem 0 1rem 0;
+        width: 30%;
+    }
+
+    .automater-img{
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+    }
+    #map{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 600px;
+        margin:  2rem auto;
+    }
+    /* About us */
+    .about-us-image{
+        height: 600px;
+        object-fit: cover;
+    }
+
+    /* Footer */
+    .foot-wrapper{
+        margin-left: 10rem;
+    }
+}
+@media only screen and (min-width: 1007px) {
+    /* Intro and header */
+    .bladet{
+        margin-top: 5%;
+    }
+
+    /* Sortiment */
+    .sortiment h1{
+        font-size: 5rem;
+    }
+    .sortiment-card{
+        margin: 1rem;
+        width: 30%;
+    }
+    .background-fluff{
+        width: 400px;
+        margin-left: 30rem;
+        margin-bottom: 15rem;
+    }
+    /* Sortiment-card, reuse and eventually turn into carousel */
+    .sortiment-card{
+        margin: auto;
+        width: 700px;
+    }
+    .sortiment-card-flex{
+    }
+    .sortiment-card img{
+        width: 100%;
+    }
+    .sortiment-card button{
+        padding: 0.5rem 5rem;
+        border-radius: 1000px;
+        border-style: solid;
+        border-width: 0.2rem;
+        font-family: "Funkie Retro";
+        font-size: 3rem;
+        color: var(--secondary-white);
+        border-color: var(--primary-orange);
+        background-color: var(--primary-orange);
+    }   /* end of sortiment-card */
+
+
+    /* Automater */
+    .automater-illustration{
+        margin: 6rem 10% 1rem 10%;
+        width: 200px;
+    }
+    .automater-container p{
+        font-size: 1rem;
+        margin: 2rem;
+        text-align: left;
+    }
+    .automater-container h1{
+        margin: 2rem;
+    }
+    .automater-img{
+        height: 500px;
+        object-fit: cover;
+    }
+    #map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 800px;
+        height: 600px;
+        margin:  4rem auto;
+    }
+
+    /* About us */
+    .about-us p{
+        display: flex;
+        position: relative;
+        text-align: center;
+    }
+    .about-us-image{
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* Footer */
+    .foot-wrapper{
+        margin-left: 20rem;
+    }
+    .footer img{
+        margin-left: 15rem;
+    }
+
+}
