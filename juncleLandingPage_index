@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <script  defer src="https://kit.fontawesome.com/bd265efb46.js" crossorigin="anonymous"></script>
+    <title>LandingPage</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <!-- Leafletjs (Interactive map) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+</head>
+
+<body>
+<!-- Intro -->
+<div class="intro-container">
+        <img src="img/logo Main.png" alt="Juncle logoet'det røde æble'" >
+        <button class="welcome-button">Welcome!</button>
+        <i class="fa-solid fa-chevron-down"></i>
+</div>
+
+<!-- Juncle header -->
+<header class="header">
+    <img class="header-arch" src="img/Subtract.png">
+        <img class="juncle-logo-light" alt="Jucle logo"src="img/Logo%20Light.png">
+        <img class="bladet" alt="Juncles blad logo" src="img/Logo%20icon.png">
+</header>
+
+<!-- Sortiment -->
+<section class="sortiment">
+    <h1>VORES SORTIMENT</h1>
+        <img class="background-fluff" src="img/Orange%20Icon.png">
+            <!-- Sortiment cards, change based on product -->
+        <div class="sortiment-card-flex">
+            <div class="sortiment-card">
+                <img src="img/JuiceboxApple.png" alt="Produkt billede">
+                <a href="ProductPage1.html"><button>Aeble Juice</button></a>
+            </div>
+            <div class="sortiment-card">
+                <img src="img/JuiceboxOrange.png" alt="Produkt billede">
+                <button>Appelsin Juice</button>
+            </div>
+            <div class="sortiment-card">
+                <img src="img/JuiceboxHyldeblomst.png" alt="Produkt billede">
+                <button>Hyldeblmost Juice</button>
+            </div>
+            <div class="sortiment-card">
+                <img src="img/JuiceboxRababer.png" alt="Produkt billede">
+                <button>Rababer Juice</button>
+            </div>
+        </div>
+    <article class="paragraph-wrap">
+        <p> Vores økologiske juice findes både i udgaver, som ikk er fra koncentrat og i udgaver, som er fra koncentrat</p>
+    </article>
+</section>
+
+<!-- Automater -->
+<section class="automater-container">
+    <img  class="automater-illustration " src="img/Illustration%20blue.png" alt="abstrakt illustration">
+    <h1>FIND VORES AUTTOMATER</h1>
+    <img  class="automater-img" src="img/Placeholder%20Vendingmachine.webp" alt="billede af en juncle automat">
+    <article class="automater-fluff">
+        <p>Juncle Automater er rundt om hele Danmark! Se hvilken en er tættest på!</p>
+    </article>
+</section>
+<!-- LeafletJS API -->
+<div id="map"></div>
+<!-- LeafletJS API -->
+
+<!-- About section -->
+<section class="about-us">
+    <h1>HVEM ER VI?</h1>
+    <article>
+        <p>Juncle er datter virksomheden af JuicOrganic, lavet til jer som elsker jeres drikkevare direkte i jeres hånd.
+        JuicOrganic er en dansk virksomhed, der producere og markedsføre en række "no-nonsens" drikkevare, som omfatter juice, saft, most,
+        smoothies, mineralvand i fleksibel emballage- og dispenserløsninger.</p>
+        <p>JuicOrganic er medlem af Økologisk Landsforening og ser okologi - ikke som et kald - men som en natrulig del af hverdagen.</p>
+        <img class="about-us-image"src="img/Beach%20image.png" alt="et billede af folk som nyder det gode vejr">
+        <p>Oplev den ægte smag af økologi med juicOrganic - danskproducerede, no-nonsense drikkevarer, skabt til der der vil nyde kvalitet og bæredygtihed direkte fra hånden!</p>
+    </article>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h1>KONTAKT OS</h1>
+    <img src="img/Apple%20Icon.png">
+    <div class="foot-wrapper">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Priorparken 681, 2606 Brøndby</p>
+    </div>
+    <div class="foot-wrapper">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Info@naturaljuice.dk</p>
+    </div>
+    <div class="foot-wrapper">
+        <i class="fa-solid fa-phone"></i>
+        <p>+45 70 70 15 80</p>
+    </div>
+    <div class="foot-wrapper">
+        <i class="fa-brands fa-instagram"></i>
+        <p>Juncledk</p>
+    </div>
+    <p>Copyright 2024 Natural juice</p>
+
+</section>
+</body>
+</html>
