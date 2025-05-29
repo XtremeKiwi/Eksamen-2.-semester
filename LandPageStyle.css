@@ -19,6 +19,26 @@
     --secondary-red: #EF3F23;
     --secondary-white: #FFFAF1;
 }
+.dark-mode{
+    background-color: var(--secondary-dark-blue);
+}
+.dark-mode p{
+    color: var(--secondary-white);
+}
+
+.light-dark-button{
+    position: absolute;
+    margin-left: 80%;
+    padding: 1rem 2rem;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: var(--primary-yellow);
+    color: var(--primary-yellow);
+    font-family: "Funkie Retro";
+    font-size: 1rem;
+    background-color: rgba(0,0,0,20%);
+    cursor: pointer;
+}
 
 
     /* Introduction and header */
@@ -293,38 +313,44 @@
 }
 @media only screen and (min-width: 1007px) {
     /* Intro and header */
-    .bladet{
+    .bladet {
         margin-top: 5%;
     }
 
     /* Sortiment */
-    .sortiment h1{
+    .sortiment h1 {
         font-size: 5rem;
     }
-    .sortiment-card{
+
+    .sortiment-card {
         margin: 1rem;
         width: 30%;
     }
-    .background-fluff{
+
+    .background-fluff {
         width: 400px;
         margin-left: 30rem;
         margin-bottom: 15rem;
     }
+
     /* Sortiment-card, reuse and eventually turn into carousel */
-    .sortiment-card{
+    .sortiment-card {
         display: flex;
         flex-direction: column;
         margin: 1rem;
         width: 230px;
     }
-    .sortiment-card-flex{
+
+    .sortiment-card-flex {
         display: grid;
         grid-template-areas: "fr fr fr fr";
     }
-    .sortiment-card img{
+
+    .sortiment-card img {
         width: 300px;
     }
-    .sortiment-card button{
+
+    .sortiment-card button {
         padding: 0.5rem 1rem;
         border-radius: 1000px;
         border-style: solid;
@@ -333,59 +359,65 @@
         font-size: 1rem;
         color: var(--primary-orange);
         border-color: var(--primary-orange);
-        background-color: rgba(0,0,0,0%);
+        background-color: rgba(0, 0, 0, 0%);
         cursor: pointer;
-    }   /* end of sortiment-card */
+    }
 
-
+    /* end of sortiment-card */
     /* Automater */
-    .automater-container{
+    .automater-container {
         display: grid;
         grid-template-areas:"fr fr fr fr";
         margin: 5%;
     }
 
-    .automater-illustration{
+    .automater-illustration {
         margin: 6rem 10% 1rem 10%;
         width: 200px;
     }
-.automater-container p{
-    font-size: 2rem;
-    margin: 10%;
-    text-align: left;
-}
-.automater-container h1{
-    margin: 5rem;
-}
-    .automater-img{
+
+    .automater-container p {
+        font-size: 2rem;
+        margin: 10%;
+        text-align: left;
+    }
+
+    .automater-container h1 {
+        margin: 5rem;
+    }
+
+    .automater-img {
         height: 500px;
         object-fit: cover;
     }
-    #map{
+
+    #map {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 80%;
-        margin:  4rem auto;
+        margin: 4rem auto;
     }
 
     /* About us */
-    .about-us p{
+    .about-us p {
         display: flex;
         position: relative;
         text-align: center;
     }
-    .about-us-image{
+
+    .about-us-image {
         height: 400px;
         object-fit: cover;
     }
 
     /* Footer */
-    .foot-wrapper{
+    .foot-wrapper {
         margin-left: 20rem;
     }
-    .footer img{
+
+    .footer img {
         margin-left: 15rem;
     }
-
 }
+
